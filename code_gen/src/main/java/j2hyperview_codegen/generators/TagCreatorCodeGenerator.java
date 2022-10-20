@@ -11,7 +11,7 @@ public final class TagCreatorCodeGenerator {
 
         for (String tag : emptyTags()) {
             final String className = SpecializedTagClassCodeGenerator.classNameFromTag(tag);
-            final String publicstaticTypeMethod = "public static " + className + " " + methodNameFromTag(tag)+ " ";
+            final String publicstaticTypeMethod = "public static " + className + " " + methodNameFromTag(tag) + " ";
             final String castReturn = " return (" + className + ") ";
             final String construct = " new " + className + "()";
 
@@ -68,18 +68,7 @@ public final class TagCreatorCodeGenerator {
 
     //  This is a method that contains all ContainerTags, there is nothing below it
     public static List<String> emptyTags() {
-        return Arrays.asList(
-                "behavior",
-                "alert:option",
-                "image",
-                "spinner",
-                "web-view",
-                "text-field",
-                "text-area",
-                "picker-item",
-                "switch",
-                "date-field"
-        );
+        return Arrays.asList();
     }
 
     public static List<String> containerTags() {
@@ -103,7 +92,17 @@ public final class TagCreatorCodeGenerator {
                 "picker-field",
                 "styles",
                 "style",
-                "modifier"
+                "modifier",
+                "behavior",
+                "alert:option",
+                "image",
+                "spinner",
+                "web-view",
+                "text-field",
+                "text-area",
+                "picker-item",
+                "switch",
+                "date-field"
         );
     }
 }

@@ -38,87 +38,6 @@ public class HyperviewCreator {
     private HyperviewCreator() {
     }
 
-    public static BehaviorTag behavior() {
-        return new BehaviorTag();
-    }
-
-    public static BehaviorTag behavior(Attr.ShortForm shortAttr) {
-        return (BehaviorTag) Attr.addTo(new BehaviorTag(), shortAttr);
-    }
-
-    public static AlertOptionTag alertOption() {
-        return new AlertOptionTag();
-    }
-
-    public static AlertOptionTag alertOption(Attr.ShortForm shortAttr) {
-        return (AlertOptionTag) Attr.addTo(new AlertOptionTag(), shortAttr);
-    }
-
-    public static ImageTag image() {
-        return new ImageTag();
-    }
-
-    public static ImageTag image(Attr.ShortForm shortAttr) {
-        return (ImageTag) Attr.addTo(new ImageTag(), shortAttr);
-    }
-
-    public static SpinnerTag spinner() {
-        return new SpinnerTag();
-    }
-
-    public static SpinnerTag spinner(Attr.ShortForm shortAttr) {
-        return (SpinnerTag) Attr.addTo(new SpinnerTag(), shortAttr);
-    }
-
-    public static WebViewTag webView() {
-        return new WebViewTag();
-    }
-
-    public static WebViewTag webView(Attr.ShortForm shortAttr) {
-        return (WebViewTag) Attr.addTo(new WebViewTag(), shortAttr);
-    }
-
-    public static TextFieldTag textField() {
-        return new TextFieldTag();
-    }
-
-    public static TextFieldTag textField(Attr.ShortForm shortAttr) {
-        return (TextFieldTag) Attr.addTo(new TextFieldTag(), shortAttr);
-    }
-
-    public static TextAreaTag textArea() {
-        return new TextAreaTag();
-    }
-
-    public static TextAreaTag textArea(Attr.ShortForm shortAttr) {
-        return (TextAreaTag) Attr.addTo(new TextAreaTag(), shortAttr);
-    }
-
-    public static PickerItemTag pickerItem() {
-        return new PickerItemTag();
-    }
-
-    public static PickerItemTag pickerItem(Attr.ShortForm shortAttr) {
-        return (PickerItemTag) Attr.addTo(new PickerItemTag(), shortAttr);
-    }
-//exception because the switch statement is a reserved keyword
-
-    public static SwitchTag toggleSwitch() {
-        return new SwitchTag();
-    }
-
-    public static SwitchTag toggleSwitch(Attr.ShortForm shortAttr) {
-        return (SwitchTag) Attr.addTo(new SwitchTag(), shortAttr);
-    }
-
-    public static DateFieldTag dateField() {
-        return new DateFieldTag();
-    }
-
-    public static DateFieldTag dateField(Attr.ShortForm shortAttr) {
-        return (DateFieldTag) Attr.addTo(new DateFieldTag(), shortAttr);
-    }
-
 // ContainerTags, generated in class j2hyperview_codegen.generators.TagCreatorCodeGenerator
     public static DocTag doc() {
         return (DocTag) new DocTag();
@@ -598,5 +517,245 @@ public class HyperviewCreator {
 
     public static ModifierTag modifier(Attr.ShortForm shortAttr, DomContent... dc) {
         return (ModifierTag) Attr.addTo(new ModifierTag().with(dc), shortAttr);
+    }
+
+    public static BehaviorTag behavior() {
+        return (BehaviorTag) new BehaviorTag();
+    }
+
+    public static BehaviorTag behavior(String text) {
+        return (BehaviorTag) new BehaviorTag().withText(text);
+    }
+
+    public static BehaviorTag behavior(DomContent... dc) {
+        return (BehaviorTag) new BehaviorTag().with(dc);
+    }
+
+    public static BehaviorTag behavior(Attr.ShortForm shortAttr) {
+        return (BehaviorTag) Attr.addTo(new BehaviorTag(), shortAttr);
+    }
+
+    public static BehaviorTag behavior(Attr.ShortForm shortAttr, String text) {
+        return (BehaviorTag) Attr.addTo(new BehaviorTag().withText(text), shortAttr);
+    }
+
+    public static BehaviorTag behavior(Attr.ShortForm shortAttr, DomContent... dc) {
+        return (BehaviorTag) Attr.addTo(new BehaviorTag().with(dc), shortAttr);
+    }
+
+    public static AlertOptionTag alertOption() {
+        return (AlertOptionTag) new AlertOptionTag();
+    }
+
+    public static AlertOptionTag alertOption(String text) {
+        return (AlertOptionTag) new AlertOptionTag().withText(text);
+    }
+
+    public static AlertOptionTag alertOption(DomContent... dc) {
+        return (AlertOptionTag) new AlertOptionTag().with(dc);
+    }
+
+    public static AlertOptionTag alertOption(Attr.ShortForm shortAttr) {
+        return (AlertOptionTag) Attr.addTo(new AlertOptionTag(), shortAttr);
+    }
+
+    public static AlertOptionTag alertOption(Attr.ShortForm shortAttr, String text) {
+        return (AlertOptionTag) Attr.addTo(new AlertOptionTag().withText(text), shortAttr);
+    }
+
+    public static AlertOptionTag alertOption(Attr.ShortForm shortAttr, DomContent... dc) {
+        return (AlertOptionTag) Attr.addTo(new AlertOptionTag().with(dc), shortAttr);
+    }
+
+    public static ImageTag image() {
+        return (ImageTag) new ImageTag();
+    }
+
+    public static ImageTag image(String text) {
+        return (ImageTag) new ImageTag().withText(text);
+    }
+
+    public static ImageTag image(DomContent... dc) {
+        return (ImageTag) new ImageTag().with(dc);
+    }
+
+    public static ImageTag image(Attr.ShortForm shortAttr) {
+        return (ImageTag) Attr.addTo(new ImageTag(), shortAttr);
+    }
+
+    public static ImageTag image(Attr.ShortForm shortAttr, String text) {
+        return (ImageTag) Attr.addTo(new ImageTag().withText(text), shortAttr);
+    }
+
+    public static ImageTag image(Attr.ShortForm shortAttr, DomContent... dc) {
+        return (ImageTag) Attr.addTo(new ImageTag().with(dc), shortAttr);
+    }
+
+    public static SpinnerTag spinner() {
+        return (SpinnerTag) new SpinnerTag();
+    }
+
+    public static SpinnerTag spinner(String text) {
+        return (SpinnerTag) new SpinnerTag().withText(text);
+    }
+
+    public static SpinnerTag spinner(DomContent... dc) {
+        return (SpinnerTag) new SpinnerTag().with(dc);
+    }
+
+    public static SpinnerTag spinner(Attr.ShortForm shortAttr) {
+        return (SpinnerTag) Attr.addTo(new SpinnerTag(), shortAttr);
+    }
+
+    public static SpinnerTag spinner(Attr.ShortForm shortAttr, String text) {
+        return (SpinnerTag) Attr.addTo(new SpinnerTag().withText(text), shortAttr);
+    }
+
+    public static SpinnerTag spinner(Attr.ShortForm shortAttr, DomContent... dc) {
+        return (SpinnerTag) Attr.addTo(new SpinnerTag().with(dc), shortAttr);
+    }
+
+    public static WebViewTag webView() {
+        return (WebViewTag) new WebViewTag();
+    }
+
+    public static WebViewTag webView(String text) {
+        return (WebViewTag) new WebViewTag().withText(text);
+    }
+
+    public static WebViewTag webView(DomContent... dc) {
+        return (WebViewTag) new WebViewTag().with(dc);
+    }
+
+    public static WebViewTag webView(Attr.ShortForm shortAttr) {
+        return (WebViewTag) Attr.addTo(new WebViewTag(), shortAttr);
+    }
+
+    public static WebViewTag webView(Attr.ShortForm shortAttr, String text) {
+        return (WebViewTag) Attr.addTo(new WebViewTag().withText(text), shortAttr);
+    }
+
+    public static WebViewTag webView(Attr.ShortForm shortAttr, DomContent... dc) {
+        return (WebViewTag) Attr.addTo(new WebViewTag().with(dc), shortAttr);
+    }
+
+    public static TextFieldTag textField() {
+        return (TextFieldTag) new TextFieldTag();
+    }
+
+    public static TextFieldTag textField(String text) {
+        return (TextFieldTag) new TextFieldTag().withText(text);
+    }
+
+    public static TextFieldTag textField(DomContent... dc) {
+        return (TextFieldTag) new TextFieldTag().with(dc);
+    }
+
+    public static TextFieldTag textField(Attr.ShortForm shortAttr) {
+        return (TextFieldTag) Attr.addTo(new TextFieldTag(), shortAttr);
+    }
+
+    public static TextFieldTag textField(Attr.ShortForm shortAttr, String text) {
+        return (TextFieldTag) Attr.addTo(new TextFieldTag().withText(text), shortAttr);
+    }
+
+    public static TextFieldTag textField(Attr.ShortForm shortAttr, DomContent... dc) {
+        return (TextFieldTag) Attr.addTo(new TextFieldTag().with(dc), shortAttr);
+    }
+
+    public static TextAreaTag textArea() {
+        return (TextAreaTag) new TextAreaTag();
+    }
+
+    public static TextAreaTag textArea(String text) {
+        return (TextAreaTag) new TextAreaTag().withText(text);
+    }
+
+    public static TextAreaTag textArea(DomContent... dc) {
+        return (TextAreaTag) new TextAreaTag().with(dc);
+    }
+
+    public static TextAreaTag textArea(Attr.ShortForm shortAttr) {
+        return (TextAreaTag) Attr.addTo(new TextAreaTag(), shortAttr);
+    }
+
+    public static TextAreaTag textArea(Attr.ShortForm shortAttr, String text) {
+        return (TextAreaTag) Attr.addTo(new TextAreaTag().withText(text), shortAttr);
+    }
+
+    public static TextAreaTag textArea(Attr.ShortForm shortAttr, DomContent... dc) {
+        return (TextAreaTag) Attr.addTo(new TextAreaTag().with(dc), shortAttr);
+    }
+
+    public static PickerItemTag pickerItem() {
+        return (PickerItemTag) new PickerItemTag();
+    }
+
+    public static PickerItemTag pickerItem(String text) {
+        return (PickerItemTag) new PickerItemTag().withText(text);
+    }
+
+    public static PickerItemTag pickerItem(DomContent... dc) {
+        return (PickerItemTag) new PickerItemTag().with(dc);
+    }
+
+    public static PickerItemTag pickerItem(Attr.ShortForm shortAttr) {
+        return (PickerItemTag) Attr.addTo(new PickerItemTag(), shortAttr);
+    }
+
+    public static PickerItemTag pickerItem(Attr.ShortForm shortAttr, String text) {
+        return (PickerItemTag) Attr.addTo(new PickerItemTag().withText(text), shortAttr);
+    }
+
+    public static PickerItemTag pickerItem(Attr.ShortForm shortAttr, DomContent... dc) {
+        return (PickerItemTag) Attr.addTo(new PickerItemTag().with(dc), shortAttr);
+    }
+
+    public static SwitchTag toggleSwitch() {
+        return (SwitchTag) new SwitchTag();
+    }
+
+    public static SwitchTag toggleSwitch(String text) {
+        return (SwitchTag) new SwitchTag().withText(text);
+    }
+
+    public static SwitchTag toggleSwitch(DomContent... dc) {
+        return (SwitchTag) new SwitchTag().with(dc);
+    }
+
+    public static SwitchTag toggleSwitch(Attr.ShortForm shortAttr) {
+        return (SwitchTag) Attr.addTo(new SwitchTag(), shortAttr);
+    }
+
+    public static SwitchTag toggleSwitch(Attr.ShortForm shortAttr, String text) {
+        return (SwitchTag) Attr.addTo(new SwitchTag().withText(text), shortAttr);
+    }
+
+    public static SwitchTag toggleSwitch(Attr.ShortForm shortAttr, DomContent... dc) {
+        return (SwitchTag) Attr.addTo(new SwitchTag().with(dc), shortAttr);
+    }
+
+    public static DateFieldTag dateField() {
+        return (DateFieldTag) new DateFieldTag();
+    }
+
+    public static DateFieldTag dateField(String text) {
+        return (DateFieldTag) new DateFieldTag().withText(text);
+    }
+
+    public static DateFieldTag dateField(DomContent... dc) {
+        return (DateFieldTag) new DateFieldTag().with(dc);
+    }
+
+    public static DateFieldTag dateField(Attr.ShortForm shortAttr) {
+        return (DateFieldTag) Attr.addTo(new DateFieldTag(), shortAttr);
+    }
+
+    public static DateFieldTag dateField(Attr.ShortForm shortAttr, String text) {
+        return (DateFieldTag) Attr.addTo(new DateFieldTag().withText(text), shortAttr);
+    }
+
+    public static DateFieldTag dateField(Attr.ShortForm shortAttr, DomContent... dc) {
+        return (DateFieldTag) Attr.addTo(new DateFieldTag().with(dc), shortAttr);
     }
 }
