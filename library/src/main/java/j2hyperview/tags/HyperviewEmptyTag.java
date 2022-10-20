@@ -26,11 +26,14 @@ import j2hyperview.tags.attributes.IVerb;
  *
  * @author tareq
  */
-public class HyperviewEmptyTag<T extends HyperviewEmptyTag<T>> extends EmptyTag<T> implements IHref<T>, IAction<T>, ITarget<T>, ITrigger<T>, IVerb<T>  {
-    
+public class HyperviewEmptyTag<T extends HyperviewEmptyTag<T>> extends EmptyTag<T> implements IHref<T>, IAction<T>, ITarget<T>, ITrigger<T>, IVerb<T> {
+
     public HyperviewEmptyTag(String tagName) {
         super(tagName);
-        this.attr("xmlns", "https://hyperview.org/hyperview");
+        if (tagName != null && "behavior".equalsIgnoreCase(tagName)) {
+            this.attr("xmlns:alert", "https://hyperview.org/hyperview-alert");
+            this.attr("xmlns:share", "https://instawork.com/hyperview-share");
+        }
     }
-    
+
 }

@@ -31,7 +31,9 @@ public class HyperviewContainerTag<T extends HyperviewContainerTag<T>> extends C
 
     public HyperviewContainerTag(String tagName) {
         super(tagName);
-        this.attr("xmlns", "https://hyperview.org/hyperview");
+        if (tagName != null && "doc".equalsIgnoreCase(tagName)) {
+            this.attr("xmlns", "https://hyperview.org/hyperview");
+        }
     }
 
 }
