@@ -1,0 +1,9 @@
+package j2hyperview.tags.specialized;
+
+import j2hyperview.tags.HyperviewContainerTag;
+import j2hyperview.tags.attributes.*;
+
+public final class StyleTag extends HyperviewContainerTag<StyleTag> 
+implements IAligncontent<StyleTag>,IAlignitems<StyleTag>,IAlignself<StyleTag>,IBorderbottomwidth<StyleTag>,IBorderleftwidth<StyleTag>,IBorderrightwidth<StyleTag>,IBordertopwidth<StyleTag>,IBorderwidth<StyleTag>,IBottom<StyleTag>,IDisplay<StyleTag>,IFlex<StyleTag>,IFlexbasis<StyleTag>,IFlexdirection<StyleTag>,IFlexgrow<StyleTag>,IFlexshrink<StyleTag>,IFlexwrap<StyleTag>,IHeight<StyleTag>,IJustifycontent<StyleTag>,ILeft<StyleTag>,IMargin<StyleTag>,IMarginbottom<StyleTag>,IMarginhorizontal<StyleTag>,IMarginleft<StyleTag>,IMarginright<StyleTag>,IMargintop<StyleTag>,IMarginvertical<StyleTag>,IMaxheight<StyleTag>,IMaxwidth<StyleTag>,IMinheight<StyleTag>,IMinwidth<StyleTag>,IOverflow<StyleTag>,IPadding<StyleTag>,IPaddingbottom<StyleTag>,IPaddinghorizontal<StyleTag>,IPaddingleft<StyleTag>,IPaddingright<StyleTag>,IPaddingtop<StyleTag>,IPaddingvertical<StyleTag>,IPosition<StyleTag>,IRight<StyleTag>,ITop<StyleTag>,IWidth<StyleTag>,IZindex<StyleTag>,IBorderrightcolor<StyleTag>,IBorderbottomcolor<StyleTag>,IBorderbottomleftradius<StyleTag>,IBorderbottomrightradius<StyleTag>,IBordercolor<StyleTag>,IBorderleftcolor<StyleTag>,IBorderradius<StyleTag>,IBackgroundcolor<StyleTag>,IBorderstyle<StyleTag>,IBordertopcolor<StyleTag>,IBordertopleftradius<StyleTag>,IBordertoprightradius<StyleTag>,IElevation<StyleTag>,IOpacity<StyleTag>,IShadowcolor<StyleTag>,IShadowoffsetx<StyleTag>,IShadowoffsety<StyleTag>,IShadowopacity<StyleTag>,IShadowradius<StyleTag>,IColor<StyleTag>,IFontsize<StyleTag>,IFontstyle<StyleTag>,IFontweight<StyleTag>,ILineheight<StyleTag>,ITextalign<StyleTag>,ITextshadowcolor<StyleTag>,IFontfamily<StyleTag>,ITextshadowradius<StyleTag> {
+public StyleTag() {super("style");}
+}
