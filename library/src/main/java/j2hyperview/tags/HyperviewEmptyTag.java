@@ -30,6 +30,7 @@ public class HyperviewEmptyTag<T extends HyperviewEmptyTag<T>> extends EmptyTag<
     
     public HyperviewEmptyTag(String tagName) {
         super(tagName);
+        this.attr("xmlns", "https://hyperview.org/hyperview");
     }
     
 }
