@@ -17,7 +17,12 @@ package j2hyperview.tags;
 
 import j2html.tags.ContainerTag;
 import j2hyperview.tags.attributes.IAction;
+import j2hyperview.tags.attributes.IDelay;
+import j2hyperview.tags.attributes.IHideDuringLoad;
 import j2hyperview.tags.attributes.IHref;
+import j2hyperview.tags.attributes.INewValue;
+import j2hyperview.tags.attributes.IOnce;
+import j2hyperview.tags.attributes.IShowDuringLoad;
 import j2hyperview.tags.attributes.ITarget;
 import j2hyperview.tags.attributes.ITrigger;
 import j2hyperview.tags.attributes.IVerb;
@@ -27,12 +32,15 @@ import j2hyperview.tags.attributes.IVerb;
  * @author tareq
  */
 public class HyperviewContainerTag<T extends HyperviewContainerTag<T>> extends ContainerTag<T>
-        implements IHref<T>, IAction<T>, ITarget<T>, ITrigger<T>, IVerb<T> {
+        implements IHref<T>, IAction<T>, ITarget<T>, ITrigger<T>, IVerb<T> , IShowDuringLoad<T>,
+        IHideDuringLoad<T>,IDelay<T>,IOnce<T>,INewValue<T>{
 
     public HyperviewContainerTag(String tagName) {
         super(tagName);
-        if (tagName != null && "doc".equalsIgnoreCase(tagName)) {
-            this.attr("xmlns", "https://hyperview.org/hyperview");
+        this.attr("xmlns", "https://hyperview.org/hyperview");
+        if (tagName != null && "behavior".equalsIgnoreCase(tagName)) {
+            this.attr("xmlns:alert", "https://hyperview.org/hyperview-alert");
+            this.attr("xmlns:share", "https://instawork.com/hyperview-share");
         }
     }
 

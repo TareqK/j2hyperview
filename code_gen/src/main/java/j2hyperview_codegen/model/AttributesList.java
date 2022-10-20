@@ -25,6 +25,11 @@ public final class AttributesList {
                 new AttrD("action", true), //global tag
                 new AttrD("target", true), //global tag
                 new AttrD("href", true), //global tag
+                new AttrD("show-during-load", true), //global tag
+                new AttrD("hide-during-load", true),//global tag
+                new AttrD("delay", true),
+                new AttrD("once", true),
+                new AttrD("new-value", true),
                 //new AttrD("id", true), //global tag covered by base Tag
                 //new AttrD("style", true), //global tag covered by base Tag
                 new AttrD("alert:title", true, "behavior"),
@@ -149,9 +154,9 @@ public final class AttributesList {
                 new AttrD("textShadowColor", true, "style"),
                 new AttrD("fontFamily", true, "style"),
                 new AttrD("textShadowRadius", true, "style"),
-                new AttrD("focused",true,"modifier"),
-                new AttrD("pressed",true,"modifier"),
-                new AttrD("selected",true,"modifier")
+                new AttrD("focused", true, "modifier"),
+                new AttrD("pressed", true, "modifier"),
+                new AttrD("selected", true, "modifier")
         );
     }
 }
