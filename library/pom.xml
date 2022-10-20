@@ -21,7 +21,6 @@
             <groupId>com.j2html</groupId>
             <artifactId>j2html</artifactId>
             <version>1.6.0</version>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
     <name>library</name>
